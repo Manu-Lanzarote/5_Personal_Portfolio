@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Efecto scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* Hacer que el scroll baje para que no se tape el inicio de la cección con el nav */
+[id] {
+  scroll-margin-top: 7ex;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: rgb(196, 2, 2);
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+
+li:hover {
+  background-color: blue;
+  padding: 19px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#welcome-section {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cont_titulos {
+  background-color: rgba(0, 0, 0, 0.644);
+  height: 100%;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(196, 2, 2);
+  -webkit-text-stroke: 1px rgb(248, 166, 166);
+  padding-top: 22vh;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(196, 2, 2);
+  -webkit-text-stroke: 0.7px rgb(248, 166, 166);
+}
+
+.titulos {
+  color: white;
+  margin: 0;
+  padding: 25px;
+}
+
+/* Sección tarjetas */
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px 10px;
+}
+
+.contenedor_pro {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.project-tile {
+  text-align: center;
+  border: solid 2px rgb(196, 2, 2);
+  width: 30vw;
+  margin: 15px 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(70, 4, 2);
+}
+
+.img_pro {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.tit_pro {
+  background-color: rgb(196, 2, 2);
+  font-size: 18px;
+  height: 60px;
+  padding: 15px 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contenedor_pro {
+    grid-template-columns: auto auto;
+  }
+  .project-tile {
+    width: 45vw;
+  }
+}
+
+.work {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-size: 3rem;
+}
+
+footer {
+  background-color: rgb(196, 2, 2);
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  padding-bottom: 5px;
+}
+.links:hover {
+  color: rgb(196, 2, 2);
+}
